@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const products = [
   {
     id: 1,
@@ -78,7 +80,9 @@ export default function Example() {
         <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
           {products.map((product) => (
             <a key={product.id} href={product.href} className="group">
-              <img
+              <Image
+                width={1000}
+                height={1000}
                 alt={product.imageAlt}
                 src={product.imageSrc}
                 className="aspect-square w-full opacity-80 overflow-hidden rounded-lg object-cover group-hover:opacity-75 sm:aspect-2/3"
