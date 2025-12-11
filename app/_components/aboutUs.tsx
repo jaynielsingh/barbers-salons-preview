@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <div className="relative m-5 ">
-      <div className="relative h-80 overflow-hidden  md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
+    <div className="relative m-5 pb-100 ">
+      <div className="relative overflow-hidden  md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
         <Image
           width={1000}
           height={1000}

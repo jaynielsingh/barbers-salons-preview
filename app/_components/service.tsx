@@ -87,9 +87,9 @@ const features = [
   },
 ];
 
-export default function Example() {
+export default function Service() {
   return (
-    <div className=" py-24 sm:py-32 capitalize">
+    <div className=" py-24 sm:py-32 capitalize min-h-max">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty  sm:text-5xl lg:text-balance">
