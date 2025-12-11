@@ -7,6 +7,7 @@ import AboutUs from "./_components/aboutUs";
 import Teams from "./_components/team";
 import Contact from "./_components/contactUs";
 import Header from "./_components/header";
+import Gallery from "./_components/gallery";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Header />
       <Features />
       <AboutUs />
+      <Gallery />
       <Teams />
       <Contact />
       <Footer />
