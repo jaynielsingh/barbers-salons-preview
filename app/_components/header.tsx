@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, ChevronDoubleDownIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,11 +12,13 @@ const navigation = [
   { name: "Team", href: "/team" },
 ];
 
+
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-black">
+    <div className="bg-black m-5">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
@@ -138,7 +140,7 @@ export default function Header() {
             className="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-288.75"
           />
         </div> */}
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div data-aos="fade-up" data-aos-delay="500" className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center  p-10 rounded-lg m-10">
               <h1 className="text-5xl  font-semibold tracking-tight text-balance  sm:text-7xl">
@@ -163,6 +165,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+
         {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"

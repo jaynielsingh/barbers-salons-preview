@@ -53,7 +53,12 @@ const people = [
 
 export default function Teams() {
   return (
-    <div className=" py-24 sm:py-32 ">
+    <div
+      data-aos="fade-left"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      className=" py-24 sm:py-32 "
+    >
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl my-10">
           <h2 className="text-4xl font-semibold  tracking-tight text-balance  sm:text-5xl ">
@@ -71,10 +76,7 @@ export default function Teams() {
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
         >
           {people.map((person) => (
-            <li
-              key={person.name}
-              className="rounded-2xl bg-black px-8 py-10 "
-            >
+            <li key={person.name} className="rounded-2xl bg-black px-8 py-10 ">
               <Image
                 width={1000}
                 height={1000}

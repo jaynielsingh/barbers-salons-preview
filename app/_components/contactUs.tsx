@@ -1,57 +1,84 @@
-export default function ContactUs() {
+export default function Contact() {
   return (
-    <div className=" flex align-center justify-center py-24 sm:py-32 ">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-semibold tracking-tight text-pretty sm:text-5xl ">
-            Contact Us
-          </h2>
-          {/* <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
-            laoreet diam sed lacus, fames.
-          </p> */}
-        </div>
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-          <div>
-            <h3 className="border-l  pl-6 font-semibold ">
-              Hayward
-            </h3>
-            <h2 className=" pl-6 font-extrabold my-2 ">Phone: 999 999 9999</h2>
-            <h4 className=" pl-6 semi-bold mb-2">Monday - Friday: 9am - 5pm</h4>
-            <address className="border-l border-gray-200 pl-6 text-gray-600 not-italic dark:border-white/10 dark:text-gray-400">
-              <p>4556 A Street</p>
-              <p>Hayward, CA 94545</p>
-            </address>
+    <div className=" py-8 sm:py-16 ">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl divide-y divide-gray-100 lg:mx-0 lg:max-w-none dark:divide-white/10">
+          <div className="grid grid-cols-1 gap-10 py-16 lg:grid-cols-3">
+            <div>
+              <h2 className="text-4xl font-semibold tracking-tight text-pretty ">
+                Get in touch
+              </h2>
+              <p className="mt-4 text-base/7 text-gray-300">
+                Have a question, want to book a service, or need help choosing
+                the right style? Our team at IgnisCuts is here to help you look
+                and feel your best.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+              <div className="rounded-2xl  p-10 bg-black">
+                <h3 className="text-base/7 font-semibold ">Owner</h3>
+                <dl className="mt-3 space-y-1 text-sm/6 text-gray-600 dark:text-gray-400">
+                  <div className="mt-1">
+                    <dt className="sr-only">Phone number</dt>
+                    <dd>+1 (555) 905-2345</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div className="rounded-2xl p-10 bg-black">
+                <h3 className="text-base/7 font-semibold ">Appointments</h3>
+                <dl className="mt-3 space-y-1 text-sm/6 text-gray-600 dark:text-gray-400">
+                  <div className="mt-1">
+                    <dt className="sr-only">Phone number</dt>
+                    <dd>+1 (555) 905-5678</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
           </div>
-          {/* <div>
-            <h3 className="border-l border-indigo-600 pl-6 font-semibold text-gray-900 dark:border-indigo-500 dark:text-white">
-              New York
-            </h3>
-            <address className="border-l border-gray-200 pt-2 pl-6 text-gray-600 not-italic dark:border-white/10 dark:text-gray-400">
-              <p>886 Walter Street</p>
-              <p>New York, NY 12345</p>
-            </address>
+          <div className="grid grid-cols-1 gap-10 py-16 lg:grid-cols-3">
+            <div>
+              <h2 className="text-4xl font-semibold tracking-tight text-pretty ">
+                Locations
+              </h2>
+              <p className="mt-4 text-base/7 text-gray-300">
+                Stop by for a cut, a shave, or just to say hello. Experience a
+                modern barbershop with old-school service and precision.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+              <div className="rounded-2xl bg-black p-10 ">
+                <h3 className="text-base/7 font-semibold ">Union City</h3>
+                <address className="mt-3 space-y-1 text-sm/6 text-gray-600 not-italic dark:text-gray-400">
+                  <p>4556 Brendan Ferry</p>
+                  <p>Union City, CA 95465</p>
+                </address>
+              </div>
+              <div className="rounded-2xl p-10 bg-black">
+                <h3 className="text-base/7 font-semibold ">New York</h3>
+                <address className="mt-3 space-y-1 text-sm/6 text-gray-600 not-italic dark:text-gray-400">
+                  <p>886 Walter Street</p>
+                  <p>Hayward, CA 12345</p>
+                </address>
+              </div>
+              {/* <div className="rounded-2xl bg-gray-50 p-10 dark:bg-gray-800/50">
+                <h3 className="text-base/7 font-semibold text-gray-900 dark:text-white">Toronto</h3>
+                <address className="mt-3 space-y-1 text-sm/6 text-gray-600 not-italic dark:text-gray-400">
+                  <p>7363 Cynthia Pass</p>
+                  <p>Toronto, ON N3Y 4H8</p>
+                </address>
+              </div>
+              <div className="rounded-2xl bg-gray-50 p-10 dark:bg-gray-800/50">
+                <h3 className="text-base/7 font-semibold text-gray-900 dark:text-white">Chicago</h3>
+                <address className="mt-3 space-y-1 text-sm/6 text-gray-600 not-italic dark:text-gray-400">
+                  <p>726 Mavis Island</p>
+                  <p>Chicago, IL 60601</p>
+                </address>
+              </div> */}
+            </div>
           </div>
-          <div>
-            <h3 className="border-l border-indigo-600 pl-6 font-semibold text-gray-900 dark:border-indigo-500 dark:text-white">
-              Toronto
-            </h3>
-            <address className="border-l border-gray-200 pt-2 pl-6 text-gray-600 not-italic dark:border-white/10 dark:text-gray-400">
-              <p>7363 Cynthia Pass</p>
-              <p>Toronto, ON N3Y 4H8</p>
-            </address>
-          </div>
-          <div>
-            <h3 className="border-l border-indigo-600 pl-6 font-semibold text-gray-900 dark:border-indigo-500 dark:text-white">
-              London
-            </h3>
-            <address className="border-l border-gray-200 pt-2 pl-6 text-gray-600 not-italic dark:border-white/10 dark:text-gray-400">
-              <p>114 Cobble Lane</p>
-              <p>London N1 2EF</p>
-            </address>
-          </div> */}
         </div>
       </div>
     </div>
-  )
+  );
 }
