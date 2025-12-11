@@ -81,7 +81,7 @@ export default function Example() {
               <img
                 alt={product.imageAlt}
                 src={product.imageSrc}
-                className="aspect-square w-full overflow-hidden rounded-lg object-cover group-hover:opacity-75 sm:aspect-2/3"
+                className="aspect-square w-full opacity-80 overflow-hidden rounded-lg object-cover group-hover:opacity-75 sm:aspect-2/3"
               />
               {/* <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
                 <h3>{product.name}</h3>
