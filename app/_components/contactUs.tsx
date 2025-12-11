@@ -55,7 +55,7 @@ export default function Contact() {
                 </address>
               </div>
               <div className="rounded-2xl p-10 bg-black">
-                <h3 className="text-base/7 font-semibold ">New York</h3>
+                <h3 className="text-base/7 font-semibold ">Hayward</h3>
                 <address className="mt-3 space-y-1 text-sm/6 text-gray-600 not-italic dark:text-gray-400">
                   <p>886 Walter Street</p>
                   <p>Hayward, CA 12345</p>
