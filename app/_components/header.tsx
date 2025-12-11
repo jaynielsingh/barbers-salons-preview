@@ -18,7 +18,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-black m-5">
+    <div className="bg-black m-3">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
